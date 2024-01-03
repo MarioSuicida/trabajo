@@ -1,0 +1,244 @@
+@font-face {
+    font-family: 'mine' ;
+    src: url(fonte/fonte_normal/MinecraftRegular-Bmg3.otf) format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'mine_bold';
+    src: url(fonte/fonte_normal/MinecraftBold-nMK1.otf) format('opentype');
+    font-weight: 700;
+    font-style:normal;
+}
+@font-face {
+    font-family: 'secreta';
+    src: url(fonte/fonte_secreta/sga-smooth-font/SgaSmoothRegular-DO0Y3.ttf);
+}
+
+.oculto{
+    display: none;
+}
+body{
+    margin: 0;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    background-color: blue;
+    font-family: 'mine';
+    
+}
+
+span{
+    font-family: 'mine';
+}
+
+#jogo , #score , #scoreEl{
+    display: none;
+}
+
+#telaInicio{
+    color: aliceblue;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.pixel , .controles {
+    cursor: pointer;
+}
+.titulo{
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    font-family: "mine_bold" ;
+    padding-bottom: 50px;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.386));
+}
+.pixel , .controles {
+    font-family: 'mine_bold';
+    font-size: 25px;
+    color: white;
+    height: auto;
+    margin: 10px;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .3s;
+    border: none;
+}
+
+.pixel:hover , .controles:hover , a:hover {
+    text-shadow: 5px 5px #202013CC;
+    font-size: 30px;
+}
+
+.pixel::before , .controles::before{
+    
+    content: "";
+    display: block;
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: -10px;
+    right: -10px;
+    background:rgb(34, 42, 111);
+    z-index: -1;
+}
+
+.pixel::after , .controles::after {
+
+    content: "";
+  display: block;
+  position: absolute;
+  top: 4px;
+  bottom: 4px;
+  left: -6px;
+  right: -6px;
+  background: rgb(45, 56, 150);
+  z-index: -1;
+}
+.pixel,.controles {
+    padding: 10px 60px;
+    position: relative;
+    background: rgb(34, 42,111);
+    width: auto;
+    z-index: 2;
+}
+
+.Telacontroles{
+    font-size: 30px;
+    max-width: 700px;
+    color: aliceblue;
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:transparent;
+    border: 1px solid white;
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+   
+
+}
+
+.teclas , .barra{
+  
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 20px;
+
+
+}
+
+a{
+    font-family: 'mine_bold';
+    text-decoration: none;
+    margin-left: 35px;
+    padding-left: 35px;
+    padding-right: 30px;
+    transition: .3s;
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.386));
+}
+
+#telaMorte{
+    font-size: 30px;
+    max-width: 700px;
+    color: rgb(112, 16, 16);
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:transparent;
+    border: 1px solid white;
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+
+}
+
+.telaInicial{
+    cursor: pointer;
+}
+
+.telaInicial{
+    font-family: 'mine_bold';
+    font-size: 25px;
+    color: white;
+    height: auto;
+    margin: 10px;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .3s;
+    border: none;
+}
+.telaInicial:hover{
+    text-shadow: 5px 5px #202013CC;
+    font-size: 30px;
+}
+
+.telaInicial::before{
+    
+    content: "";
+    display: block;
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: -10px;
+    right: -10px;
+    background: rgb(97, 30, 30);
+    z-index: -1;
+}
+
+.telaInicial::after{
+
+    content: "";
+  display: block;
+  position: absolute;
+  top: 4px;
+  bottom: 4px;
+  left: -6px;
+  right: -6px;
+  background: rgb(111, 34, 34);
+  z-index: -1;
+}
+
+.telaInicial{
+    padding: 10px 60px;
+    position: relative;
+    background: rgb(111, 34, 34);
+    width: auto;
+    z-index: 2;
+}
+
+#contagemRegressiva{
+    color: white;
+}
+
+#som {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgb(34, 42, 111);
+    color: white;
+    font-family: 'mine_bold';
+    font-size: 18px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 5px;
+    z-index: 3;
+}
+
+#som:hover {
+    background-color: rgb(45, 56, 150);
+}

@@ -1,0 +1,64 @@
+
+<title>OI</title>
+<div style="position: relative;">
+    
+    <p id="score" style="position: absolute;
+    z-index: 10;
+    color: white; left: 10px; top: 10px; margin: 0; font-family: sans-serif; font-size: 14px;"><span>Score : </span> <span id="scoreEl">0</span></p>
+    
+    <h1 id="contagemRegressiva" style="display: none; font-size: 24px; color: white; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);font-size: 100px;"></h1>
+    
+    <h1 id="mensagemFinal" style="display: none; font-size: 24px; color: white; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);font-size: 100px;">Go!</h1>
+
+    <audio id="somJogo" loop>
+        <source src="som/all-my-fellas.mp3">
+    </audio>
+    <audio  id="somTiro">
+        <source src="som/tiro.mp3">
+    </audio>
+
+    <audio  id="somMorte">
+        <source src="som/xamuel-luna.mp3">
+    </audio>
+    
+    <div id="telaInicio">
+
+        <button id="som">som</button>
+        
+        <h1 class="titulo">As aventuras do Laion Alado</h1>
+        <button id="playButton" class="pixel">Jogar</button>
+        <button class="controles" id="controles">Controles</button>
+
+        <audio  id="somDeFundo" loop >
+            <source src="som/fala-baixo-nengue.mp3" type="audio/mp3">
+        </audio>
+
+    </div>
+
+    <div id="Telacontroles" class="Telacontroles" style="display: none;">
+        
+        <p><span class="teclas">a</span> : esquerda</p> <br>
+        <p><span class="teclas">d</span> : esquerda</p> <br>
+        <p><span class="barra">space</span> : atira</p> <br>
+
+        <a href="index.html">voltar</a>
+        
+
+    </div>
+
+
+    
+    <div id="telaMorte" style="display: none;">
+        
+        <h1 class="morte"> Você Morreu !</h1>
+        <p>Score: <span id="scoreFinal"></span></p>
+        <a href="index.html" ><button id="telaInicial" class="telaInicial">Tela Inicial </button></a>
+    
+    </div>
+        
+    <canvas id="jogo" ></canvas>
+
+</div>
+<script src="jogo.js"></script>
+<link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
